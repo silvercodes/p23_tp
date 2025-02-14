@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_di", "01_di\01_di.csproj", "{F8E25D91-E327-4EAD-8C77-4E0C83F1C260}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_DIC_example", "02_DIC_example\02_DIC_example.csproj", "{DDE40359-8D3C-4775-8A06-2065878A0574}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8E25D91-E327-4EAD-8C77-4E0C83F1C260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E25D91-E327-4EAD-8C77-4E0C83F1C260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E25D91-E327-4EAD-8C77-4E0C83F1C260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E25D91-E327-4EAD-8C77-4E0C83F1C260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE40359-8D3C-4775-8A06-2065878A0574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE40359-8D3C-4775-8A06-2065878A0574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE40359-8D3C-4775-8A06-2065878A0574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE40359-8D3C-4775-8A06-2065878A0574}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
