@@ -1,0 +1,30 @@
+﻿
+
+
+
+title		<argument>		<option> <option>...
+
+clean {path} {--R|report=`report.txt`-->Make report}
+
+clean "/usr/bin" -r=logs.txt
+
+
+Argument
+========
+
+{path}				required
+{path?}				optional
+{path=C:\Photo}		optional with default value
+
+Options
+=======
+
+{--report}					boolean option (flag)
+{--report|r}
+{--report|R}
+{--r|report}
+{--R|report}
+{--R|report=}							required
+{--R|report=`report.txt`}				optional with default value
+{--R|report=`report.txt`-->Make report}
+
