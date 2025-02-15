@@ -13,6 +13,7 @@ internal class ConsoleKernel : Kernel
     {
         Bootstrappers.Add(new AppBootstrapper());
         Bootstrappers.Add(new BuildBootstrapper(Commands));
+        Bootstrappers.Add(new ParsingBootstrapper());
         //
     }
 }

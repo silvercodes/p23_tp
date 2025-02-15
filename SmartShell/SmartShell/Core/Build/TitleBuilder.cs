@@ -1,11 +1,21 @@
-﻿namespace SmartShell.Core.Build;
+﻿using SmartShell.Core.Parsing;
+
+namespace SmartShell.Core.Build;
 
 internal class TitleBuilder : IBuilder<string>
 {
+    private const string TITLE_PATTERN = @"^[a-z]+";
+    private IParser parser;
+    public TitleBuilder(IParser parser)
+    {
+        this.parser = parser;
+    }
     public string? Build(string signature)
     {
-        Console.WriteLine(signature);
+        string title = parser.ExtractMatch(signature, TITLE_PATTERN);
 
-        return "";
+        // TODO: throw App Exception
+
+        return title;
     }
 }
