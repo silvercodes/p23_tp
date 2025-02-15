@@ -12,7 +12,7 @@ internal class ConsoleKernel : Kernel
     protected override void SetupBootstrappers()
     {
         Bootstrappers.Add(new AppBootstrapper());
-        //
+        Bootstrappers.Add(new BuildBootstrapper(Commands));
         //
     }
 }

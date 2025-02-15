@@ -11,10 +11,17 @@ internal static class AppServiceProvider
     {
         Services = new ServiceCollection();
     }
-
     public static void BuildProvider()
     {
         Provider = Services.BuildServiceProvider();
     }
-
+    public static T? GetService<T>()
+    {
+        return Provider.GetService<T>();
+    }
+    public static T GetRequiredService<T>()
+        where T : notnull
+    {
+        return Provider.GetRequiredService<T>();
+    }
 }

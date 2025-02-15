@@ -15,7 +15,6 @@ internal abstract class Kernel
         SetupBootstrappers();
 
         Bootstrap();
-
     }
 
     protected abstract void SetupBootstrappers();
