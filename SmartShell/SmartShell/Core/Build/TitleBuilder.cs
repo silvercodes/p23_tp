@@ -4,6 +4,8 @@ internal class TitleBuilder : IBuilder<string>
 {
     public string? Build(string signature)
     {
-        throw new NotImplementedException();
+        Console.WriteLine(signature);
+
+        return "";
     }
 }

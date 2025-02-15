@@ -8,7 +8,7 @@ internal abstract class Kernel
     protected CommandCollection Commands { get; set; }
     public Kernel(CommandCollection commands)
     {
-        commands = new CommandCollection();
+        Commands = commands;
 
         Bootstrappers = new List<Bootstrapper>();
 
