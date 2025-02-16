@@ -1,9 +1,13 @@
-﻿namespace SmartShell.Core.Boot;
+﻿using Microsoft.Extensions.DependencyInjection;
+using SmartShell.Core.Runtime;
+
+namespace SmartShell.Core.Boot;
 
 internal class AppBootstrapper : Bootstrapper
 {
     public override void Register()
     {
-        // throw new NotImplementedException();
+        AppServiceProvider.Services.AddSingleton<RuntimeController>();
+        AppServiceProvider.Services.AddSingleton<IStateLoader, DefaultStateLoader>();
     }
 }

@@ -1,4 +1,5 @@
 ﻿using SmartShell.Core.Boot;
+using SmartShell.Core.Runtime;
 
 namespace SmartShell.Core;
 
@@ -28,9 +29,10 @@ internal abstract class Kernel
         Bootstrappers.ForEach(bootstrapper => bootstrapper.Boot());
     }
 
-
     public void Handle()
     {
+        RuntimeController controller = AppServiceProvider.GetRequiredService<RuntimeController>();
 
+        controller.StartProcessing(Commands);
     }
 }

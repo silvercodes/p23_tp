@@ -1,4 +1,6 @@
-﻿namespace SmartShell;
+﻿using SmartShell.Core.Exceptions;
+
+namespace SmartShell;
 
 public class CommandCollection
 {
@@ -12,5 +14,15 @@ public class CommandCollection
     public void Add(Command command)
     {
         Commands.Add(command);
+    }
+
+    public Command Find(string title)
+    {
+        Command? cmd = Commands.Find(c => c.Title == title);
+
+        if (cmd is null)
+            throw new RuntimeException(RuntimeException.CMD_NOT_FOUNT);
+
+        return cmd;
     }
 }

@@ -6,7 +6,7 @@ title		<argument>		<option> <option>...
 
 clean {path} {--R|report=`report.txt`-->Make report}
 
-clean "/usr/bin" -r=logs.txt
+clean "/usr/bin"
 
 
 Argument
